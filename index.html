@@ -1,0 +1,55 @@
+s<!DOCTYPE html>
+<html lang="es">
+<link>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="style.css"></link>
+</head>
+<body>
+<script src="script.js"></script>
+  <header>
+    <h1>Mi Landing Page</h1>
+    <nav>
+      <a href="#about">Sobre mí</a>
+      <a href="#projects">Proyectos</a>
+      <a href="#contact">Contacto</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Hola, soy Emilio Corona</h1>
+    <p>Creo sitios web atractivos y limpios, con un diseño moderno y efectos suaves que hacen la experiencia más agradable.</p>
+    <a class="btn" href="#contact">Contáctame</a>
+  </div>
+
+  <section id="about">
+    <h2>Sobre mí</h2>
+    <div class="card">
+      <p>Me gusta desarrollar proyectos web que sean bonitos, funcionales y fáciles de usar. Disfruto aprendiendo y mejorando cada día.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Proyectos</h2>
+    <div class="card">Proyecto 1: Página personal sencilla con efectos visuales.</div>
+    <div class="card">Proyecto 2: Mini tienda interactiva con JS.</div>
+    <div class="card">Proyecto 3: Blog de notas en línea con diseño atractivo.</div>
+  </section>
+
+  <section id="contact">
+    <h2>Contacto</h2>
+    <form onsubmit="enviarCorreo(event)">
+      <input type="text" placeholder="Tu nombre" required>
+      <input type="email" placeholder="Tu correo" required>
+      <textarea placeholder="Mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <p id="confirmacion" style="color:green; display:none; margin-top:10px;">¡Tu mensaje está listo para enviar!</p>
+  </section>
+
+  <footer>
+    © 2025 Emilio Corona Muñoz. Hecho con HTML Y CSS.
+  </footer>
+</body>
+</html>
